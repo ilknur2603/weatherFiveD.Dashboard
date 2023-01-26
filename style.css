@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(208, 176, 238);
+}
+.span1 {
+  display: inline-block;
+  width: 30%;
+}
+label {
+  font-size: larger;
+  color: rgb(170, 233, 212);
+}
+
+#future-weather {
+  background-color: rgb(226, 141, 141);
+  border-radius: 5px 10px 10px 5px;
+  -webkit-border-radius: 5px 10px 10px 5px;
+  -moz-border-radius: 5px 10px 10px 5px;
+  -ms-border-radius: 5px 10px 10px 5px;
+  -o-border-radius: 5px 10px 10px 5px;
+  margin: 0px !important;
+}
+#search-button {
+  background-color: beige;
+}
+#clear-button {
+  background-color: beige;
+}
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0px !important;
+  color: rgb(94, 94, 218);
+}
+.city-name {
+  color: rgb(155, 235, 235);
+}
+.col-sm-12 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: oblique;
+}

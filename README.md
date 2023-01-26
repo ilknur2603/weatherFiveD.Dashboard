@@ -1,6 +1,6 @@
-# weatherFiveD.Dashboard :snowman:
+# weatherFiveD.Dashboard :snowman: :sunny: :umbrella:
 
-Hi I'm ILKNUR
+Hi I'm ILKNUR 👋
 
 ```
 GIVEN a weather dashboard with form inputs
@@ -16,13 +16,13 @@ THEN I am again presented with current and future conditions for that city
 
 The purpose of this project is to make a weather application using the https://api.openweathermap.org api.It is to bring and display the weather conditions of the location desired by the user.
 
-Live Link of the Project!
+Live Link of the Project! :eyes:
 <a href>(http://127.0.0.1:5500/index.html)</a>
 
 WHAT I USED
 ![Bootstrap](	https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-[!CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JAVASCRIPT](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![JQuery](	https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 How does my project look

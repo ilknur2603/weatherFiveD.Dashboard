@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App Forecast Five Days</title>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- başlık bölümü -->
+    <header class="container-fluid bg-info text-center text-white p-2">
+      <h1>Weather Dashboard</h1>
+    </header>
+
+    <main class="container">
+      <div class="row">
+        <section class="col-sm-4 bg-success">
+          <form>
+            <label for="search-city">Search for a City:</label>
+            <input type="text" id="search-city" class="form-control" />
+            <div>
+              <input type="submit" value="Search" id="search-button" />
+              <input type="reset" value="Clear" id="clear-button" />
+            </div>
+          </form>
+          <!-- list part- left side -->
+          <ul class="list-group"></ul>
+        </section>
+        <!-- current  -->
+        <section class="col-sm-8">
+          <div class="row bg-danger">
+            <div class="col-sm-12" id="current-weather">
+              <h2 id="current-city" class="city-name">city (date) icon</h2>
+              <p class="current">
+                <span class="span1">Temparature</span>:
+                <span class="span2" id="temparature"> (temp) F</span>
+              </p>
+              <p class="current">
+                <span class="span1">Wind</span>:
+                <span class="span2" id="wind"> (speed) mph</span>
+              </p>
+              <p class="current">
+                <span class="span1">Humidity</span>:
+                <span class="span2" id="humidity"> (humidity) %</span>
+              </p>
+              <p class="current">
+                <span class="span1">UV index</span>:
+                <span class="span2" id="uv-index"> (value) %</span>
+              </p>
+            </div>
+          </div>
+          <!-- 5 days (guess) forecast -->
+          <div class="col-sm-12" id="future-weather">
+            <h2>5-Days Forecast:</h2>
+            <div class="row bg-warning">
+              <div class="col-sm-2 border border-dark">
+                <!--GIVE THEM  ID WITH DIFFERENT INDEX-->
+                <p id="futDate0">date</p>
+                <p id="futIcon0">icon</p>
+                <p>temparature: <span id="futTemp0"></span></p>
+                <p>wind: <span id="futWind0"></span></p>
+                <p>humidity: <span id="futHum0"></span></p>
+                <p>uv index: <span id="futUv0"></span></p>
+              </div>
+              <div class="col-sm-2 border border-dark">
+                <p id="futDate1">date</p>
+                <p id="futIcon1">icon</p>
+                <p>temparature: <span id="futTemp1"></span></p>
+                <p>wind: <span id="futWind1"></span></p>
+                <p>humidity: <span id="futHum1"></span></p>
+                <p>uv index: <span id="futUv1"></span></p>
+              </div>
+              <div class="col-sm-2 border border-dark">
+                <p id="futDate2">date</p>
+                <p id="futIcon2">icon</p>
+                <p>temparature: <span id="futTemp2"></span></p>
+                <p>wind: <span id="futWind2"></span></p>
+                <p>humidity: <span id="futHum2"></span></p>
+                <p>uv index: <span id="futUv2"></span></p>
+              </div>
+              <div class="col-sm-2 border border-dark">
+                <p id="futDate3">date</p>
+                <p id="futIcon3">icon</p>
+                <p>temparature: <span id="futTemp3"></span></p>
+                <p>wind: <span id="futWind3"></span></p>
+                <p>humidity: <span id="futHum3"></span></p>
+                <p>uv index: <span id="futUv3"></span></p>
+              </div>
+              <div class="col-sm-2 border border-dark">
+                <p id="futDate4">date</p>
+                <p id="futIcon4">icon</p>
+                <p>temparature: <span id="futTemp4"></span></p>
+                <p>wind: <span id="futWind4"></span></p>
+                <p>humidity: <span id="futHum4"></span></p>
+                <p>uv index: <span id="futUv4"></span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- javascript -->
+    <script src="./app.js"></script>
+  </body>
+</html>
